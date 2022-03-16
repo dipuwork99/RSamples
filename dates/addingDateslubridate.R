@@ -19,3 +19,10 @@ new_date
 
 #formatting input_time as below and adding the timezone (for example, GMT):
 input_time = as.POSIXlt("2018-05-05T14:14:05", format='%Y-%m-%dT %H:%M:%S', tz="GMT")
+
+
+library(lubridate)
+dmy("1/1/2001") + days(45)
+
+
+seq.Date( Sys.Date(), length=2, by='3 months' )[2]
